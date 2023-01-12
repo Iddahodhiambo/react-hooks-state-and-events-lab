@@ -7,10 +7,10 @@ function ShoppingList({ items }) {
     setSelectedCategory(e.target.value) 
   }
   const finalList = items.filter(list => {
-    if(selectedCategory ==="everything"){
+    if(selectedCategory =="everything"){
       return true
     }else{
-    return list.category === selectedCategory
+    return list.category == selectedCategory
     }
   }) 
   return (
